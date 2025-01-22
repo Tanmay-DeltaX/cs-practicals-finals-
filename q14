@@ -1,0 +1,23 @@
+stu = ["Tanmay","Nihar","Pratyuksh"]
+dict ={"Tanmay":99,"Nihar":33,"Pratyuksh":00}
+exit=True
+while exit:
+    ask= int(input(" For adding a student record | Press 1  , For changing the score of a student | Press 2 ,  For deleting the record of the student | Press 3 , To exit | Press 4"))
+    if ask==1:
+        name = input("Enter the name of the student")
+        score = int(input("Enter the score of the student"))
+        stu.append(name)
+        dict[name]=score
+        print(dict)
+    elif ask==2:
+        name = input("Enter the name of the student")
+        n_score = input("Enter the new marks of the students")
+        dict[name]=n_score
+        print(dict)
+    elif ask==3:
+        name = input("Enter the name of the student")
+        del dict[name]
+        print(dict)
+    else:
+        exit= False  
+        print(dict)
