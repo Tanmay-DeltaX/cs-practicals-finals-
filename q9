@@ -1,0 +1,10 @@
+num = int(input("Enter the number of elements in your tuple"))
+tup = tuple()
+for i in range(num):
+    ele = int(input("Enter the value"))
+    tup+=(ele,)
+
+print("Maximum of all the numbers :",max(tup))
+print("Minimum of all the numbers :",min(tup))
+print("Sum of all the numbers :",sum(tup))
+print("Mean of all the numbers :",sum(tup)/num)
