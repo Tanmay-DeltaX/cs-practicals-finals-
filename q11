@@ -1,0 +1,19 @@
+dict = {}
+exit = True
+while exit:
+    ask=int(input("For adding student details | Press 1  ,    For student details | Press 2  , To exit | Press 3"))
+    if ask==1:
+         ad_num = int(input("enter the admission number"))
+         roll_num = int(input("enter the roll number"))
+         name = input("enter the name of the student")
+         percent = int(input("enter the percentage of student"))
+         dict[ad_num]=[roll_num,name,percent]
+
+    elif ask==2:
+        adm= int(input("Enter the admission number of the student"))
+        print("Roll number of the student is ",dict[adm][0])
+        print("Name of the student is ",dict[adm][1])
+        print("Percentage of the student is ",dict[adm][2])
+
+    else:
+        exit= False
