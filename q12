@@ -3,7 +3,7 @@ lst = []
 n_tup=tuple()
 for i in tup:
     lst.append(i)
-    print(3)
+    
 lst.reverse()
 
 print(lst)
