@@ -1,0 +1,6 @@
+num = int(input("Enter the number of elements in your tuple"))
+tup = tuple()
+for i in range(num):
+    ele = input("Enter the value")
+    tup+=(ele,)
+print(tup)    
