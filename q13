@@ -1,0 +1,14 @@
+dict ={}
+exit=True
+while exit:
+    ask = int(input("For adding a item | Press 1 , To exit | 2"))
+    if ask==1:
+        item = input("Enter the item name")
+        price = int(input("Enter the price of the item"))
+        stock = int(input("Enter the stock quantity of the item"))
+        
+        dict[item]=(price,stock)
+        print(dict)
+    else:
+        exit=False
+
