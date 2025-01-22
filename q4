@@ -1,0 +1,12 @@
+check=0
+str = input("Enter your text")
+for i in range(len(str)):
+     if str[i]==str[len(str)-i-1]:
+         continue
+     else:
+         check+=1
+         break
+if check==0:
+    print("It is a palindrone")
+else:
+    print("It is not a palindrone")
