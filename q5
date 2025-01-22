@@ -1,0 +1,9 @@
+num = int(input("Enter the number of elements in your list"))
+lst = []
+for i in range(num):
+    ele = int(input("Enter the digit"))
+    lst.append(ele)
+for k in lst:
+    if k%2!=0:
+        lst.remove(k)
+print("New list is :",lst)      
