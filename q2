@@ -1,0 +1,4 @@
+str = input("Enter your text")
+sub = input("Enter your substring")
+
+print("Number of times ",sub," comes in the given string is :", str.count(sub))
