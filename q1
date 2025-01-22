@@ -1,0 +1,19 @@
+lower=0
+upper=0
+alp=0
+num=0
+
+str = input("Enter your text")
+for i in str:
+    if i.islower()==True:
+        lower+=1
+    if i.isupper()==True:
+        upper+=1    
+    if i.isalpha()==True:
+        alp+=1
+    if i.isnumeric()==True:
+        num+=1    
+print("Number of lower case letters in the given string :", lower)
+print("Number of upper case letters in the given string :", upper)
+print("Number of aplhabets in the given string :", alp)
+print("Number of  digits in the given string :", num)
